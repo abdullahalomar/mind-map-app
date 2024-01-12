@@ -163,7 +163,7 @@ export default function MindNode() {
               className={`bg-violet-200 py-2 px-8 text-black font-bold rounded-md ms-10 ${buttonStyle.backgroundColor} ${buttonColor.color}`}
               onClick={toggleLightMode}
             >
-              {isLightMode ? "Dark" : "Light"}
+              {isLightMode ? "Dark mood" : "Light mood"}
             </button>
           </div>
         </div>
