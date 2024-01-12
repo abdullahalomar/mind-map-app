@@ -116,7 +116,7 @@ export default function MindNode() {
           />
         </ReactFlow>
         <div className="grid grid-cols-1 md:grid-cols-2 mb-10">
-          <div className="flex md:flex sm:flex mt-2 mx-3">
+          <div className="flex md:flex sm:flex mt-4 mx-3">
             <div className="">
               <input
                 className="border-cyan-600 rounded-md"
@@ -127,7 +127,7 @@ export default function MindNode() {
             </div>
             <div className="ms-2">
               <button
-                className="bg-sky-600 py-2 px-8 text-white font-bold rounded-md hover:bg-sky-800"
+                className="bg-sky-600 py-2 px-4 text-white font-bold rounded-md hover:bg-sky-800"
                 id="one"
                 type="button"
                 onClick={addNode}
@@ -136,7 +136,7 @@ export default function MindNode() {
               </button>
             </div>
           </div>
-          <div className="mt-2 sm:flex-col">
+          <div className="sm:flex-col mt-1.5 ms-3">
             <button
               className="bg-yellow-500 py-2 px-8 text-white font-bold rounded-md hover:bg-yellow-600 me-2"
               id="three"
@@ -153,7 +153,7 @@ export default function MindNode() {
             </button>
             <button
               id="dark"
-              className={`bg-violet-200 py-2 px-8 text-black font-bold ms-3 sm:mt-3 rounded-full ${buttonStyle.backgroundColor} ${buttonColor.color}`}
+              className={`bg-violet-200 py-2 px-8 text-black font-bold ms-2 mt-2 sm:mt-3 rounded-full ${buttonStyle.backgroundColor} ${buttonColor.color}`}
               onClick={toggleLightMode}
             >
               {isLightMode ? "Dark" : "Light"}
