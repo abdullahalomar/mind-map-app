@@ -115,8 +115,8 @@ export default function MindNode() {
             }}
           />
         </ReactFlow>
-        <div className="flex justify-center mb-10">
-          <div className="flex mt-2 me-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 mb-10">
+          <div className="flex md:flex sm:flex mt-2 mx-3">
             <div className="">
               <input
                 className="border-cyan-600 rounded-md"
@@ -136,14 +136,7 @@ export default function MindNode() {
               </button>
             </div>
           </div>
-          <div className="mt-2">
-            {/* <button
-              className="bg-green-600 py-2 px-8 text-white font-bold rounded-md hover:bg-green-800 me-2"
-              id="two"
-              onClick={handleSaveClick}
-            >
-              Save Mind Map
-            </button> */}
+          <div className="mt-2 sm:flex-col">
             <button
               className="bg-yellow-500 py-2 px-8 text-white font-bold rounded-md hover:bg-yellow-600 me-2"
               id="three"
@@ -160,10 +153,10 @@ export default function MindNode() {
             </button>
             <button
               id="dark"
-              className={`bg-violet-200 py-2 px-8 text-black font-bold rounded-md ms-10 ${buttonStyle.backgroundColor} ${buttonColor.color}`}
+              className={`bg-violet-200 py-2 px-8 text-black font-bold ms-3 sm:mt-3 rounded-full ${buttonStyle.backgroundColor} ${buttonColor.color}`}
               onClick={toggleLightMode}
             >
-              {isLightMode ? "Dark mood" : "Light mood"}
+              {isLightMode ? "Dark" : "Light"}
             </button>
           </div>
         </div>
